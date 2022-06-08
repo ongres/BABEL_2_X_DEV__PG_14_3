@@ -9,6 +9,10 @@ SUBDIRS = \
 		amcheck		\
 		auth_delay	\
 		auto_explain	\
+		babelfishpg_common \
+		babelfishpg_money \
+		babelfishpg_tds \
+		babelfishpg_tsql \
 		bloom		\
 		btree_gin	\
 		btree_gist	\
@@ -50,6 +54,8 @@ SUBDIRS = \
 		tsm_system_time \
 		unaccent	\
 		vacuumlo
+
+SUBDIRS += babelfishpg_tsql 
 
 ifeq ($(with_ssl),openssl)
 SUBDIRS += sslinfo
